@@ -1,4 +1,6 @@
-# Comp 462/561 - Homework #3
+# Comp 561 Computational Biology Methods and Research - Homework #3
+
+grade = 100%
 
 ## Question 1
 
