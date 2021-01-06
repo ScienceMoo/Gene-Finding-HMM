@@ -1,5 +1,7 @@
 # Comp 561 Computational Biology Methods and Research - Homework #3
 
+## Hidden markov model (HMM) for separating genic and intergenic regions in bacterial DNA
+
 grade = 100%
 
 ## Question 1
