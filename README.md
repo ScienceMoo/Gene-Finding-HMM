@@ -6,13 +6,14 @@ grade = 100%
 
 ## Question 1
 
-### a) 
+### a) Using the genome sequence and gene annotation for Vibrio cholerae, create the configuration sheet
+Code: [q1_a.mlx](q1_a.mlx)
 
 i) Average Length of Intergenic Regions: 1164.4bp
 
 ii) Average Length of Genic Regions: 991.4515bp
 
-iii) Nucleotide Frequency Table 
+iii) Nucleotide Frequency Table for intergenic regions
 
 |       | Frequency |
 | :---: | :-------: |
@@ -21,11 +22,9 @@ iii) Nucleotide Frequency Table
 |   G   |  0.2262   |
 |   T   |  0.2646   |
 
-iv) see [configurations.xlsx](configurations.xlsx) for the codon frequency table (emission table)
+iv) see [configurations.xlsx](configurations.xlsx) for the codon frequency table for genic regions (emission table)
 
-Code for this section: [q1_a.mlx](q1_a.mlx)
-
-### b)
+### b) Using the programming language of your choice, implement the Viterbi algorithm
 
 The code for the Viterbi algorithm is found in [Viterbi.m](Viterbi.m) and it uses the matlab function [findGenes.m](findGenes.m)
 
@@ -37,11 +36,11 @@ Viterbi(fastaFilename, configFilename, outputFile)
 
 This will automatically save the output in gff3 format.
 
-### c) 
+### c) Run your program on the genome of Vibrio vulnificus, using the parameters obtained for Vibrio cholerae
 
 The gene predictions are found in [vulnificusOutput.gff3](vulnificusOutput.gff3) 
 
-### d) 
+### d) Evaluate the accuracy of your predictions against the gene annotation available
 
 Code for this section and the next is found in [q1_d.mlx](q1_d.mlx)
 
@@ -57,7 +56,7 @@ The fraction of guessed genes that:
 * Match start but not stop: 0
 * Do not match at all: 20.4 %
 
-### e) 
+### e) What properties of annotated genes are associated to an elevated risk of being partially or completely missed by your predictor? What are the properties of genes predicted by your predictor that do not match an annotated gene?
 
 There are two properties that cause genes to be missed. 
 
